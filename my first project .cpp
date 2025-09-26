@@ -14,7 +14,7 @@
 
   <footer class="footer">
 
-    <p>© <span id="year"></span> Rathinavel | Made with 💖</p>
+    <p>© <span id="year"></span> sabarinathan | Made with 💖</p>
 
   </footer>
 
