@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Car Models Gallery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background-color: #eaeaea;
+        }
+        .card-content {
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .car-model {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 10px 0 8px;
+            color: #34495e;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .card img {
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Car Models Gallery</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2017/01/06/19/15/car-1952824_1280.jpg" alt="Tesla Model S" />
+            <div class="card-content">
+                <div class="car-model">Tesla Model S</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/car-1867150_1280.jpg" alt="BMW M4" />
+            <div class="card-content">
+                <div class="car-model">BMW M4</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg" alt="Audi R8" />
+            <div class="card-content">
+                <div class="car-model">Audi R8</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2016/03/27/22/22/car-1284413_1280.jpg" alt="Ford Mustang" />
+            <div class="card-content">
+                <div class="car-model">Ford Mustang</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2017/08/06/22/01/car-2591879_1280.jpg" alt="Lamborghini Huracan" />
+            <div class="card-content">
+                <div class="car-model">Lamborghini Huracan</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/car-1867151_1280.jpg" alt="Mercedes-Benz C-Class" />
+            <div class="card-content">
+                <div class="car-model">Mercedes-Benz C-Class</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
